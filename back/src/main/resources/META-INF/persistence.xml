@@ -5,6 +5,7 @@
 
     <persistence-unit name="userUnit">
         <class>com.jeorgius.entities.UserEntity</class>
+        <class>com.jeorgius.entities.AddressEntity</class>
         <jta-data-source>java:jboss/jeorgiusDS</jta-data-source>
         <properties>
             <property name="hibernate.hbm2ddl.auto" value="update" />

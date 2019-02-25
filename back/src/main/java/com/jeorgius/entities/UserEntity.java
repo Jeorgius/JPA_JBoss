@@ -1,16 +1,28 @@
 package com.jeorgius.entities;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="user", schema="userdata")
-@SequenceGenerator(name="h", sequenceName = "userdata.hibernate_sequence")
 public class UserEntity {
 
-    @Id @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "h")
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nick;
     private String email;
+
+//    @OneToMany
+//    private List<AddressEntity> addresses;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     private String pw;
 
     public String getNick() {
@@ -35,13 +47,5 @@ public class UserEntity {
 
     public void setPw(String pw) {
         this.pw = pw;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 }

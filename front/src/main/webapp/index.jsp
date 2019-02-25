@@ -13,9 +13,15 @@
 <body>
 <h1>Enter your credentials</h1>
     <form action="register" method="post">
-        <input type="text" name="nick">
-        <input type="text" name="email">
-        <input type="password" name="pw">
+        <input type="text" name="nick" placeholder="nickname">
+        <input type="text" name="email" placeholder="email">
+        <input type="password" name="pw" placeholder="password">
+        <br/> <br/>
+        <input type="text" name="country1" placeholder="country">
+        <input type="text" name="city1" placeholder="city">
+
+        <input type="text" name="country2" placeholder="country">
+        <input type="text" name="city2" placeholder="city">
         <input type="submit">
     </form>
 </body>
