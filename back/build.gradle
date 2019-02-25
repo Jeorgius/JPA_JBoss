@@ -1,0 +1,5 @@
+
+description = 'back'
+dependencies {
+    compileOnly group: 'javax', name: 'javaee-api', version:'7.0'
+}

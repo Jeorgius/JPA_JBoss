@@ -1,0 +1,8 @@
+rootProject.name = 'jpaJBoss'
+include ':back'
+include ':front'
+include ':ear'
+
+project(':back').projectDir = "$rootDir/back" as File
+project(':front').projectDir = "$rootDir/front" as File
+project(':ear').projectDir = "$rootDir/ear" as File

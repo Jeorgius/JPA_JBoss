@@ -1,0 +1,6 @@
+
+description = 'ear'
+dependencies {
+  compile project(':back')
+  compile project(':front')
+}

@@ -1,0 +1,11 @@
+
+apply plugin: 'war'
+
+jar.enabled = true
+description = 'front'
+dependencies {
+  compile project(':back')
+    providedCompile group: 'javax', name: 'javaee-web-api', version:'7.0'
+    providedCompile group: 'javax.servlet', name: 'jsp-api', version:'2.0'
+    providedCompile group: 'javax.servlet.jsp', name: 'javax.servlet.jsp-api', version:'2.3.3'
+}
